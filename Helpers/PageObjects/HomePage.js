@@ -1,19 +1,21 @@
 import BaseElement from "../Elements/BaseElement";
+import { BasePage } from "./BasePage";
 
+const url = "/";
 
+export class HomePage extends BasePage {
 
-export class HomePage {
+    #baseElement = new BaseElement(this.page);
 
-    // navigate(){
-    //     cy.visit('/',{
-    //          auth:{
-    //             username: "guest",
-    //             password: "welcome2qauto",
-    //         },
-    //     });
-    // }
+    constructor(page){
+        super(page, url);
+        this.page = page;
+    }
 
-    #baseElement = new BaseElement();
+    get couponCode(){
+        return this.#baseElement.getElement("#couponCode1");
+    }
+
 
     get button(){
         return this.#baseElement.getElement('button[class="hero-descriptor_btn btn btn-primary"]');
@@ -47,13 +49,13 @@ export class HomePage {
         return this.#baseElement.getElement("#signinPassword");
     }
     get buttonLogIn() {
-        return this.#baseElement.getElement('button.btn.btn-primary').contains('Login');
+        return this.#baseElement.getElement('button.btn.btn-primary:has-text("Login")');
     }
 
-    login(email, password){
-        this.inputSignInEmail.type(email);
-        this.inputSignInPassword.type(password, {sensitive: true});
-        this.buttonLogIn.click();
+   async login(email, password){
+        await this.inputSignInEmail.type(email);
+        await this.inputSignInPassword.type(password);
+        await this.buttonLogIn.click();
     }
     
 
