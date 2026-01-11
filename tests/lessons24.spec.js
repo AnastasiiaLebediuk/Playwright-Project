@@ -244,6 +244,6 @@ test.describe ("Negative tests", ()=>{
 
             await expect(garagePage.garageButton).toBeVisible();
 
-        })
+        });
 
     });
