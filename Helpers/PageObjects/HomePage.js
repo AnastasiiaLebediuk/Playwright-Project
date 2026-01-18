@@ -1,6 +1,9 @@
 import BaseElement from "../Elements/BaseElement";
+import { BasePage } from "./BasePage";
 
+const url = "/";
 
+export class HomePage extends BasePage {
 
 export class HomePage  {
     #baseElement;
