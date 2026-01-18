@@ -1,7 +1,8 @@
 import {test , expect} from "@playwright/test";
 import { HomePage } from "../Helpers/PageObjects/HomePage.js";
 import { GaragePage} from "../Helpers/PageObjects/GaragePage.js";
-import { before, beforeEach, describe } from "node:test";
+// import { before, beforeEach, describe } from "node:test";
+
 
 
 test.describe ("Positive test", ()=>{
@@ -236,9 +237,10 @@ test.describe ("Negative tests", ()=>{
         test("Login", async ({page})=>{
             const homePage = new HomePage(page);
             const garagePage = new GaragePage(page);
+            
 
             await homePage.buttonSignIn.click();
-            await homePage.login("aqa2-nasta@lebediuk.com", "TestPassword123")
+            homePage.login("aqa2-nasta@lebediuk.com", "TestPassword123");
 
             await page.waitForURL('**/panel/garage');
 

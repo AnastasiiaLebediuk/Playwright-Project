@@ -5,17 +5,16 @@ const url = "/";
 
 export class HomePage extends BasePage {
 
-    #baseElement = new BaseElement(this.page);
+export class HomePage  {
+    #baseElement;
 
-    constructor(page){
-        super(page, url);
-        this.page = page;
-    }
+    constructor(page) {
+    this.#baseElement = new BaseElement(page);
+  }
 
-    get couponCode(){
-        return this.#baseElement.getElement("#couponCode1");
-    }
 
+
+    // #baseElement = new BaseElement();
 
     get button(){
         return this.#baseElement.getElement('button[class="hero-descriptor_btn btn btn-primary"]');
@@ -48,15 +47,24 @@ export class HomePage extends BasePage {
     get inputSignInPassword() {
         return this.#baseElement.getElement("#signinPassword");
     }
+    // get buttonLogIn() {
+    //     return this.#baseElement.getElement('button.btn.btn-primary').contains('Login');
+    // }
     get buttonLogIn() {
-        return this.#baseElement.getElement('button.btn.btn-primary:has-text("Login")');
+    return this.#baseElement.getElement('.modal-footer .btn.btn-primary');
     }
 
-   async login(email, password){
-        await this.inputSignInEmail.type(email);
-        await this.inputSignInPassword.type(password);
-        await this.buttonLogIn.click();
-    }
+    // login(email, password){
+    //     this.inputSignInEmail.type(email);
+    //     this.inputSignInPassword.type(password, {sensitive: true});
+    //     this.buttonLogIn.click();
+    // }
+
+    async login(email, password) {
+    await this.inputSignInEmail.fill(email);
+    await this.inputSignInPassword.fill(password);
+    await this.buttonLogIn.click();
+}
     
 
 }

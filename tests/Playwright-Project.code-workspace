@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "Playwright-Project",
+		"path": ".."
+	},
+	{
+		"name": "Helpers",
+		"path": "../../Cypress-Project/cypress/Helpers"
+	}
+],
+  "settings": {}
+}
