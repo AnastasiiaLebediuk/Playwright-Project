@@ -1,38 +1,47 @@
+import BaseElement from "../Elements/BaseElement";
+import { BasePage } from "./BasePage";
 
-export class FuelExpenses{
+const url = "url";
 
+export class FuelExpensesextends extends BasePage {
+     #baseElement = new BaseElement(this.page);
+
+     constructor(page){
+        super(page,url);
+        this.page = page;
+    }
     
  
     get fuelExpensesButton(){
-        return cy.get('[class="icon icon-fuel"]');
+        return this.#baseElement.getElement('[class="icon icon-fuel"]');
     }
 
     get addAnExpenseButton(){
-        return cy.get('button[class="btn btn-primary"]');
+        return this.#baseElement.getElement('button[class="btn btn-primary"]');
     }
 
     get vehicleField (){
-        return cy.get('[formcontrolname="carId"]');
+        return this.#baseElement.getElement('[formcontrolname="carId"]');
     }
 
     get reportDateField (){
-        return cy.get('[placement="dd.mm.yyyy"]');
+        return this.#baseElement.getElement('[placement="dd.mm.yyyy"]');
     }
 
     get mileageField2 (){
-        return cy.get('[formcontrolname="mileage"]');
+        return this.#baseElement.getElement('[formcontrolname="mileage"]');
     }
 
     get numberOfLiters (){
-        return cy.get('[formcontrolname="liters"]');
+        return this.#baseElement.getElement('[formcontrolname="liters"]');
     }
 
     get totalCost (){
-        return cy.get('[formcontrolname="totalCost"]');
+        return this.#baseElement.getElement('[formcontrolname="totalCost"]');
     }
 
     get addButton2 (){
-        return cy.get('.modal-footer').contains('button.btn.btn-primary','Add')
+        return this.#baseElement.getElement('.modal-footer').contains('button.btn.btn-primary','Add')
     }
 
 }

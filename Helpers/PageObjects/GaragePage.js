@@ -1,33 +1,41 @@
 import BaseElement from "../Elements/BaseElement";
+import { BasePage } from "./BasePage";
 
+// const url = "/panel/garage";
 
-export class GaragePage {
+export class GaragePage extends BasePage {
+     #baseElement;
 
-    // #baseElement = new BaseElement();
+     constructor(page){
+        super(page,"/panel/garage");
+        this.page = page;
+        this.#baseElement = new BaseElement(this.page)
+    }
+    
 
      get addCarBtn() {
-        return cy.contains('button.btn.btn-primary', 'Add car');
+        return this.#baseElement.getElement('button.btn.btn-primary', 'Add car');
     }
 
 
     get brandField (){
-        return cy.get('[formcontrolname="brand"]');
+        return this.#baseElement.getElement('[formcontrolname="brand"]');
     }
 
     get modelField (){
-        return cy.get('[formcontrolname="model"]');
+        return this.#baseElement.getElement('[formcontrolname="model"]');
     }
 
     get mileageField (){
-        return cy.get('[formcontrolname="mileage"]');
+        return this.#baseElement.getElement('[formcontrolname="mileage"]');
     }
 
     get addButton() {
-    return cy.get('.modal-footer').contains('button.btn.btn-primary', 'Add');
+    return this.#baseElement.getElement('.modal-footer').contains('button.btn.btn-primary', 'Add');
     }
 
     get garageButton(){
-        return cy.get('.btn.btn-white.btn-sidebar.sidebar_btn.-active')
+        return this.#baseElement.getElement('.btn.btn-white.btn-sidebar.sidebar_btn.-active')
     }
 
 
