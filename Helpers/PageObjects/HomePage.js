@@ -3,7 +3,7 @@ import { BasePage } from "./BasePage";
 
 const url = "/";
 
-export class HomePage extends BasePage {
+// export class HomePage extends BasePage {
 
 export class HomePage  {
     #baseElement;
