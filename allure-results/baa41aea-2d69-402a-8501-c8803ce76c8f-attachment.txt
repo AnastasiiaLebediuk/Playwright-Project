@@ -1,0 +1,72 @@
+[
+  {
+    name: 'token',
+    value: 's%3ACDvYRCSeFiTQNMVCoZtjdWENFDKt53qZ.XuvmnUBQZE1rll3s81oqCFZwWATJjhHByZrIBFGwfkQ',
+    domain: 'qauto.forstudy.space',
+    path: '/',
+    expires: -1,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'Lax'
+  },
+  {
+    name: '__Secure-YNID',
+    value: '15.YT=M3Rj7ssHOTR9J_wwez1hHa969Ai-Ud1VGnhB4R7rEdJydEkA6hlirU-ykTCGW7Pj7q43sRoRHhRlF9YDRgVJ3NSCM9NUvxGATYhRQpwtYt5QHxqr2wfnwMJi19idohq1b-DadrZlGWfRyLN3mOAyanwo-iyetnpxXu8AhBevNtwTieWcOtoCxRJx64fRUfMEVCpymTyaeigo1aK3NfcDyuO6J-1-horXztsWvadnv402Uk6iA8G5cL2GhZE3t4Rg87osYicG0clRLzUKLn7BJvPpvTgoV9Oa6x02TLfVQvr5-t092T1x-_IR9R3lp9FEPlkkXPj18xvpXlzqpGBt5A',
+    domain: '.youtube.com',
+    path: '/',
+    expires: 1785510577.294129,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  },
+  {
+    name: 'YSC',
+    value: 'SCbTz0MBfDo',
+    domain: '.youtube.com',
+    path: '/',
+    expires: -1,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  },
+  {
+    name: 'VISITOR_INFO1_LIVE',
+    value: 'hIlJNh6aklA',
+    domain: '.youtube.com',
+    path: '/',
+    expires: 1785510577.294483,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  },
+  {
+    name: 'VISITOR_PRIVACY_METADATA',
+    value: 'CgJVQRIEGgAgNQ%3D%3D',
+    domain: '.youtube.com',
+    path: '/',
+    expires: 1785510577.294515,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  },
+  {
+    name: '__Secure-ROLLOUT_TOKEN',
+    value: 'CLGkz42SoazmhwEQ7baKwsm4kgMY7baKwsm4kgM%3D',
+    domain: '.youtube.com',
+    path: '/',
+    expires: 1785510577.294531,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  }
+]

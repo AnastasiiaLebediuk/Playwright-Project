@@ -1,0 +1,86 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - banner [ref=e7]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: /
+              - img [ref=e12]
+            - navigation [ref=e25]:
+              - link "Garage" [ref=e26] [cursor=pointer]:
+                - /url: /panel/garage
+              - link "Fuel expenses" [ref=e27] [cursor=pointer]:
+                - /url: /panel/expenses
+              - link "Instructions" [ref=e28] [cursor=pointer]:
+                - /url: /panel/instructions
+          - button "User photo My profile" [ref=e31] [cursor=pointer]:
+            - img "User photo" [ref=e32]
+            - text: My profile
+      - generic [ref=e37]:
+        - navigation [ref=e39]:
+          - link " Garage" [ref=e40]:
+            - /url: /panel/garage
+            - generic [ref=e41]: 
+            - text: Garage
+          - link " Fuel expenses" [ref=e42] [cursor=pointer]:
+            - /url: /panel/expenses
+            - generic [ref=e43]: 
+            - text: Fuel expenses
+          - link " Instructions" [ref=e44] [cursor=pointer]:
+            - /url: /panel/instructions
+            - generic [ref=e45]: 
+            - text: Instructions
+          - generic [ref=e46]:
+            - link " Profile" [ref=e47] [cursor=pointer]:
+              - /url: /panel/profile
+              - generic [ref=e48]: 
+              - text: Profile
+            - link " Settings" [ref=e49] [cursor=pointer]:
+              - /url: /panel/settings
+              - generic [ref=e50]: 
+              - text: Settings
+          - generic [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]: 
+            - text: Log out
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "Garage" [level=1] [ref=e58]
+            - button "Add car" [ref=e59] [cursor=pointer]
+          - generic [ref=e60]:
+            - img [ref=e61]
+            - paragraph [ref=e63]: You don’t have any cars in your garage
+    - contentinfo [ref=e65]:
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - paragraph [ref=e69]: © 2021 Hillel IT school
+          - paragraph [ref=e70]: Hillel auto developed in Hillel IT school for educational purposes of QA courses.
+        - link [ref=e72] [cursor=pointer]:
+          - /url: /
+          - img [ref=e73]
+    - paragraph [ref=e80]: You have been successfully logged in
+  - dialog [ref=e81]:
+    - document:
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - heading "Log in" [level=4] [ref=e85]
+          - button "Close" [ref=e86] [cursor=pointer]: ×
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: Email
+            - textbox "Email" [ref=e92]: aqa2-nasta@lebediuk.com
+          - generic [ref=e93]:
+            - generic [ref=e94]: Password
+            - textbox "Password" [ref=e95]: TestPassword123
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - checkbox "Remember me" [ref=e98]
+              - generic [ref=e99]: Remember me
+            - button "Forgot password" [ref=e100] [cursor=pointer]
+        - generic [ref=e101]:
+          - button "Registration" [ref=e102] [cursor=pointer]
+          - button "Login" [ref=e103] [cursor=pointer]
+```

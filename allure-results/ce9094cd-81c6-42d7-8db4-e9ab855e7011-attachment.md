@@ -1,0 +1,100 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - banner [ref=e7]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: /
+              - img [ref=e12]
+            - navigation [ref=e25]:
+              - link "Garage" [ref=e26] [cursor=pointer]:
+                - /url: /panel/garage
+              - link "Fuel expenses" [ref=e27] [cursor=pointer]:
+                - /url: /panel/expenses
+              - link "Instructions" [ref=e28] [cursor=pointer]:
+                - /url: /panel/instructions
+          - button "User photo My profile" [ref=e31] [cursor=pointer]:
+            - img "User photo" [ref=e32]
+            - text: My profile
+      - generic [ref=e37]:
+        - navigation [ref=e39]:
+          - link " Garage" [ref=e40]:
+            - /url: /panel/garage
+            - generic [ref=e41]: 
+            - text: Garage
+          - link " Fuel expenses" [ref=e42] [cursor=pointer]:
+            - /url: /panel/expenses
+            - generic [ref=e43]: 
+            - text: Fuel expenses
+          - link " Instructions" [ref=e44] [cursor=pointer]:
+            - /url: /panel/instructions
+            - generic [ref=e45]: 
+            - text: Instructions
+          - generic [ref=e46]:
+            - link " Profile" [ref=e47] [cursor=pointer]:
+              - /url: /panel/profile
+              - generic [ref=e48]: 
+              - text: Profile
+            - link " Settings" [ref=e49] [cursor=pointer]:
+              - /url: /panel/settings
+              - generic [ref=e50]: 
+              - text: Settings
+          - generic [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]: 
+            - text: Log out
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "Garage" [level=1] [ref=e58]
+            - button "Add car" [ref=e59] [cursor=pointer]
+          - list [ref=e62]:
+            - listitem [ref=e63]:
+              - generic [ref=e65]:
+                - generic [ref=e66]:
+                  - generic [ref=e67]:
+                    - img "Fiesta" [ref=e69]
+                    - paragraph [ref=e71]: Ford Fiesta
+                  - generic [ref=e72]:
+                    - button "" [ref=e73] [cursor=pointer]:
+                      - generic [ref=e74]: 
+                    - button "Add fuel expense" [ref=e75] [cursor=pointer]
+                - generic [ref=e76]:
+                  - paragraph [ref=e77]: Update mileage • 01.02.2026
+                  - generic [ref=e79]:
+                    - generic [ref=e80]: 
+                    - spinbutton [ref=e81]: "272"
+                    - button "Update" [disabled] [ref=e82]
+    - contentinfo [ref=e84]:
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - paragraph [ref=e88]: © 2021 Hillel IT school
+          - paragraph [ref=e89]: Hillel auto developed in Hillel IT school for educational purposes of QA courses.
+        - link [ref=e91] [cursor=pointer]:
+          - /url: /
+          - img [ref=e92]
+    - paragraph [ref=e99]: You have been successfully logged in
+  - dialog [ref=e100]:
+    - document:
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - heading "Log in" [level=4] [ref=e104]
+          - button "Close" [ref=e105] [cursor=pointer]: ×
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e110]: Email
+            - textbox "Email" [ref=e111]: aqa2-nasta@lebediuk.com
+          - generic [ref=e112]:
+            - generic [ref=e113]: Password
+            - textbox "Password" [ref=e114]: TestPassword123
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - checkbox "Remember me" [ref=e117]
+              - generic [ref=e118]: Remember me
+            - button "Forgot password" [ref=e119] [cursor=pointer]
+        - generic [ref=e120]:
+          - button "Registration" [ref=e121] [cursor=pointer]
+          - button "Login" [ref=e122] [cursor=pointer]
+```

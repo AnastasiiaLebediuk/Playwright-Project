@@ -1,0 +1,60 @@
+[
+  {
+    name: 'token',
+    value: 's%3AxKheA-O7Gdo8auKh7g23sHb7w8BuKbUg.%2FXrlO6ohNJtcs20jXmUChDtUI9ofiJa7hQqUZRLdxRw',
+    domain: 'qauto.forstudy.space',
+    path: '/',
+    expires: -1,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'Lax'
+  },
+  {
+    name: 'YSC',
+    value: 'q_4csINcPOU',
+    domain: '.youtube.com',
+    path: '/',
+    expires: -1,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  },
+  {
+    name: 'VISITOR_INFO1_LIVE',
+    value: 'AlZbH605FOU',
+    domain: '.youtube.com',
+    path: '/',
+    expires: 1785511281.617982,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  },
+  {
+    name: 'VISITOR_PRIVACY_METADATA',
+    value: 'CgJVQRIEGgAgNg%3D%3D',
+    domain: '.youtube.com',
+    path: '/',
+    expires: 1785511281.618002,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  },
+  {
+    name: '__Secure-ROLLOUT_TOKEN',
+    value: 'CM_MsvWV6_WwQhDvm_mRzLiSAxjvm_mRzLiSAw%3D%3D',
+    domain: '.youtube.com',
+    path: '/',
+    expires: 1785511281.618017,
+    httpOnly: true,
+    secure: true,
+    sameSite: 'None',
+    partitionKey: 'https://forstudy.space',
+    _crHasCrossSiteAncestor: true
+  }
+]
