@@ -14,7 +14,7 @@ export class GaragePage extends BasePage {
     
 
      get addCarBtn() {
-        return this.#baseElement.getElement('button.btn.btn-primary', 'Add car');
+        return this.#baseElement.getElement('.btn.btn-primary');
     }
 
 

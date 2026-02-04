@@ -1,5 +1,13 @@
 name: Playwright Tests
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      testOptions:
+        description: 'Test options'
+        default: ''
+        requires: false
+        type: string
+
 jobs:
   myTest:
     name: Running tests
@@ -15,7 +23,8 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      # run: npx playwright test
+      run: npm run pw:test -- ${{ inputs.testOptions }}
     # - uses: actions/upload-artifact@v4
     #   if: ${{ !cancelled() }}
     #   with:

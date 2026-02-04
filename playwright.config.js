@@ -66,13 +66,13 @@ export default defineConfig({
       },
     },
 
-     {
-      name: 'stg',
-      //@ts-ignore
-      use: { baseURL:stagingEnv.BASE_URL, 
+    //  {
+    //   name: 'stg',
+    //   //@ts-ignore
+    //   use: { baseURL:stagingEnv.BASE_URL, 
 
-      },
-    },
+    //   },
+    // },
 
     // {
     //   name: 'firefox',
