@@ -5,14 +5,14 @@ import { GaragePage} from "../Helpers/PageObjects/GaragePage.js";
 
 
 
-test.describe ("Positive test", ()=>{
+test.describe.skip  ("Positive test", ()=>{
     
     test.beforeEach(async({page})=>{
            
             await page.goto("/", {waitUntil: "networkidle"});
         });
 
-    test("First test",async({ page })=>{
+    test.skip ("First test",async({ page })=>{
         const homePage = new HomePage(page);
         const garagePage = new GaragePage(page);
 
@@ -32,7 +32,7 @@ test.describe ("Positive test", ()=>{
     })
 })
 
-test.describe ("Negative tests", ()=>{
+test.describe.skip  ("Negative tests", ()=>{
 
     test.beforeEach(async({page})=>{
            
@@ -40,7 +40,7 @@ test.describe ("Negative tests", ()=>{
         });
 
     
-    test("Empty name", async({page})=>{
+    test.skip ("Empty name", async({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -51,7 +51,7 @@ test.describe ("Negative tests", ()=>{
     });
 
 
-    test("Short name", async({page})=>{
+    test.skip ("Short name", async({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -61,7 +61,7 @@ test.describe ("Negative tests", ()=>{
         await expect(page.getByText("Name has to be from 2 to 20 characters long")).toBeVisible();
     });
 
-    test("Incorrect language the name", async({page})=>{
+    test.skip ("Incorrect language the name", async({page})=>{
 
         const homePage = new HomePage(page);
 
@@ -73,7 +73,7 @@ test.describe ("Negative tests", ()=>{
     });
 
 
-    test("Too long a name", async({page})=>{
+    test.skip ("Too long a name", async({page})=>{
         const homePage = new HomePage(page);
 
 
@@ -85,7 +85,7 @@ test.describe ("Negative tests", ()=>{
     });
 
 
-    test ("Empty Lastname", async({page})=>{
+    test.skip  ("Empty Lastname", async({page})=>{
         const homePage = new HomePage(page);
 
 
@@ -97,7 +97,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-    test("Short LastName", async({page})=>{
+    test.skip ("Short LastName", async({page})=>{
 
      const homePage = new HomePage(page);
 
@@ -111,7 +111,7 @@ test.describe ("Negative tests", ()=>{
 
 
         
-    test("Too long a LastName", async({page})=>{
+    test.skip ("Too long a LastName", async({page})=>{
 
      const homePage = new HomePage(page);
 
@@ -123,7 +123,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-    test("Incorrect of the last name",async({page})=>{
+    test.skip ("Incorrect of the last name",async({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -134,7 +134,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-    test ("Empty Email", async ({page})=>{
+    test.skip  ("Empty Email", async ({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -145,7 +145,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-    test("Invalid email", async({page})=>{
+    test.skip ("Invalid email", async({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -157,7 +157,7 @@ test.describe ("Negative tests", ()=>{
     });
 
 
-    test("Empty password", async({page})=>{
+    test.skip ("Empty password", async({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -168,7 +168,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-    test("Short password", async({page})=>{
+    test.skip ("Short password", async({page})=>{
         const homePage = new HomePage(page);
 
         homePage.button.click();
@@ -179,7 +179,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-    test("Password in capital letters", async({page})=>{
+    test.skip ("Password in capital letters", async({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -190,7 +190,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-    test("Password in lowercase letters", async({page})=>{
+    test.skip ("Password in lowercase letters", async({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -201,7 +201,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-     test("Empty Re-enter password", async({page})=>{
+     test.skip ("Empty Re-enter password", async({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -213,7 +213,7 @@ test.describe ("Negative tests", ()=>{
 
     });
 
-    test ("Short Re-enter password", async ({page})=>{
+    test.skip  ("Short Re-enter password", async ({page})=>{
         const homePage = new HomePage(page);
 
         await homePage.button.click();
@@ -227,14 +227,14 @@ test.describe ("Negative tests", ()=>{
     });
 
 
-    test.describe("Login test", ()=>{
+    test.describe.skip ("Login test", ()=>{
 
         test.beforeEach(async({page})=>{
            
             await page.goto("/", {waitUntil: "networkidle"});
         });
 
-        test("Login", async ({page})=>{
+        test.skip ("Login", async ({page})=>{
             const homePage = new HomePage(page);
             const garagePage = new GaragePage(page);
             

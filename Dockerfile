@@ -1,8 +1,9 @@
 FROM mcr.microsoft.com/playwright:v1.58.0-noble
-WORKDIR /test
+
+WORKDIR /tests
 
 # Install the application dependencies
-COPY package* json •/ 
+COPY package*.json ./
 RUN npm install
 
 # Copy in the source code

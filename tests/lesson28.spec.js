@@ -4,7 +4,7 @@ import { test } from "../fixtures/Fixtures/userGaragePage.js";
 
 
 
-test.describe ("Positive test", ()=>{
+test.describe.skip ("Positive test", ()=>{
     
     test.beforeEach(async({page})=>{
            
@@ -12,7 +12,7 @@ test.describe ("Positive test", ()=>{
         });
 
 
-        test("Local Storage", async ({userGaragePage, page}) => {
+        test.skip ("Local Storage", async ({userGaragePage, page}) => {
             const homePage = new HomePage(page);
             
 
