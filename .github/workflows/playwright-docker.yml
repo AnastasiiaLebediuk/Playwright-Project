@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: Hocker/setup-docker-action@v3
+    # - uses: Hocker/setup-docker-action@v3
     - name: Building Docker Image 
       run: docker build -t playwright-test-image .
     - name: Running Docker
